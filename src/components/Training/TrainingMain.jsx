@@ -1,4 +1,4 @@
-import TimeTable from "./TimeTable"
+import TimeTable from "./TimeTable";
 import FindTraining from"./FindTraining";
 import TimeTableAicon from "../../assets/TimetableActive.svg"
 import TimeTableDicon from "../../assets/TimeTableDeactive.svg"
