@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Tabs from "../Tabs";
 import SearchIconActive from "../../assets/AllSearchActive.svg";
-import PeopleIconActive from "../../assets/PeopleActive.svg"
-import PeopleIconDeactive from "../../assets/PeopleDeactive.svg"
-import SearchIconDeactive from "../../assets/AllSearchDeactive.svg"
+import PeopleIconActive from "../../assets/PeopleActive.svg";
+import PeopleIconDeactive from "../../assets/PeopleDeactive.svg";
+import SearchIconDeactive from "../../assets/AllSearchDeactive.svg";
 import AllPeople from "./AllPeople";
-import FindPersonForm from "./FindPersonForm"
-import "./PeopleMainContent.css"
+import FindPersonForm from "./FindPersonForm";
+import "./PeopleMainContent.css";
 
 export default function PeopleMainContent() {
   const [form, setForm] = useState({
