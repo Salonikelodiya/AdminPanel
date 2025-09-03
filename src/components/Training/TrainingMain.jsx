@@ -1,4 +1,4 @@
-import TimeTable from "./TimeTable";
+
 import FindTraining from"./FindTraining";
 import TimeTableAicon from "../../assets/TimetableActive.svg"
 import TimeTableDicon from "../../assets/TimeTableDeactive.svg"
@@ -12,6 +12,7 @@ import QuizzesDicon  from "../../assets/QueryDeactive.svg"
 import RegisterA from  "../../assets/Trai_Regi_Active.svg"
 import  RegisterD from "../../assets/Trai_Regi_Deactive.svg"
 import Registeration from "./Registeration";
+import TimeTable from "./TimeTable";
 import Tabs from  "../Tabs";
 import Feedback from "./Feedback"
 

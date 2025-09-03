@@ -1,8 +1,8 @@
 import Filterform from "./Filterform";
 
-function Findtraning(){
+function Findtraining(){
     return(
         <Filterform/>
     )
 }
-export default Findtraning;
+export default Findtraining;
