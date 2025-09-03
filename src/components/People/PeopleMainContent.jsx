@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Tabs from "../Tabs";
 import SearchIconActive from "../../assets/AllSearchActive.svg";
-import PeopleIconActive from "../../assets/PeopleActive.svg";
+import PeopleIconActive from "../../assets/peopleActive.svg"
 import PeopleIconDeactive from "../../assets/PeopleDeactive.svg"
 import SearchIconDeactive from "../../assets/AllSearchDeactive.svg"
 import AllPeople from "./AllPeople";
