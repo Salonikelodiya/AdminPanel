@@ -1,5 +1,5 @@
 import React from 'react'
-import Group3Filter from './Group3filter';
+import Group3Filter from './Group3Filter';
 import Group2Table from './Group2Table';
 function AllProject (){
   
