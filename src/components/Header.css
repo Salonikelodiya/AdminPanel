@@ -1,21 +1,22 @@
 /* Header Bar */
 .headbar {
-  display: flex ;
-  align-items: center ;
+  display: flex;
+  align-items: center;
   flex-direction: row;
- /* Use full container width for responsiveness */
- width: 1440px; /* Limit width on large screens */
-  position: sticky; /* Stick to top */
-  z-index: 1000 ;
-  height: 64px ;
-  margin: 0 auto; /* Center horizontally */
-  box-sizing: border-box; /* Include padding/borders in width */
-  background: #fff ;
+  width: 100%;
+  max-width: 1440px; /* maximum width limit */
+  position: sticky;
+  top: 0; /* crucial for sticking to top */
+  z-index: 1000;
+  height: 64px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: #fff;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  padding: 0 24px ;
-
+  padding: 0 24px;
 }
+
 
 /* Profile & Search Section */
 .profile-section {
