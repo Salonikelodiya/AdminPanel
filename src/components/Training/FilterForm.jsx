@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./filterForm.css";
 import calendericon from "../../assets/Calender.svg"
 
-function FilterForm({ onFilter }) {
+function Filterform({ onFilter }) {
   const [filters, setFilters] = useState({
     field: "All",
     training: "All",
@@ -118,4 +118,4 @@ function FilterForm({ onFilter }) {
   );
 }
 
-export default FilterForm;
+export default Filterform;

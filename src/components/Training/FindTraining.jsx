@@ -1,8 +1,8 @@
-import FilterForm from "./Filterform.jsx";
+import Filterform from "./Filterform";
 
 function Findtraing(){
     return(
-        <FilterForm/>
+        <Filterform/>
     )
 }
 export default Findtraing;
