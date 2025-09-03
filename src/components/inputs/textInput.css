@@ -3,6 +3,7 @@
 height: 58px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .text-label {

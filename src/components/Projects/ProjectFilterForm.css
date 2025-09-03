@@ -1,37 +1,40 @@
 .filter-form-outer {
-  gap: 20px;
   width: 1128px;
   height: 836px;
   border-radius: 14px;
   background: #fff;
-  box-sizing: border-box;
-  opacity: 1;
-  overflow: hidden;
+  padding: 20px;
+  
 }
 
 .filter-form-grid{
   display: grid;
   gap: 20px;
-  grid-template-columns: 450px 450px 228px;
-  background: #fff;
-  padding: 5px 20px;
-  border-radius: 12px;
-  box-sizing: border-box;
+  grid-template-columns: 2fr 2fr 1fr;
   /* limit inside form too */
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 /* Subgroup grid */
-.filter-subgroup {
+.filter-subgroup2 {
   display: grid;
-  gap: 5px;
-  width: 100%;
-  justify-content: center;
+  grid-template-columns: 50% 50%;
+  width: 384px;
+  height: 116px;
+  margin-bottom: 20px;
+  padding: 10px;
   gap: 20px;
+  
+  justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(2, 50%);
+  
 }
+.filter-subgroup2 [type="text"], input[type="search"], select{
+  width: 184px;
+height: 58px;
+border-radius: 3px;
+
+}
+
 
 /* Form Title */
 .form-title {

@@ -1,202 +1,204 @@
-/* Base form container */
+.form1{
+  width: 1128px;
+  min-height: 836px;
+  display: flex;
+  flex-direction: column;
+   background: #fff;
+ padding: 20px 20px 20px 20px;
+ border-radius: 16px;
+}
 .main-content-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
-  gap: 30px;
-  border-radius: 16px;
-  padding: 18px;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 10px;
+  height: 100%;
   box-shadow: 0 4px 24px rgba(30, 40, 50, 0.07);
-  background: #fff;
-  overflow: auto;
+  overflow: hidden;
+  margin: 0 auto;
+
 }
 
-@media (max-width: 1020px) {
-  .main-content-grid {
-    grid-template-columns: 1fr 1fr;
-    padding: 12px;
-  }
-}
-@media (max-width: 700px) {
-  .main-content-grid {
-    grid-template-columns: 1fr;
-    padding: 9px;
-  }
-}
-
-/* Form layout */
-.filter-form1 {
+/* Left form column */
+ .filter-form2 ,.filter-form1 {
   display: flex;
   flex-direction: column;
   gap: 22px;
-  max-width: 100%;
-  width: 100%;
-  padding: 18px 20px;
 }
 
-.form-row,
-.education-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  width: 100%;
-}
-
-.form-row-subgroup {
+/* Each row of paired fields (e.g., Login + Branch, 1C Id + Practice) */
+.filter-subgroup1  {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  width: 100%;
+  grid-template-columns: 50% 50%;
+  width: 384px;
+  height: 116px;
+  margin-bottom: 20px;
 }
 
-/* Responsive stacking for rows */
 @media (max-width: 900px) {
-  .form-row,
-  .education-row,
-  .form-row-subgroup {
-    flex-direction: column;
+  .main-content-grid {
     grid-template-columns: 1fr;
-    gap: 13px;
+    gap: 18px;
+    padding: 24px 12px;
+  }
+  .filter-subgroup1, .form-row-subgroup {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-width: 180px;
-  margin-bottom: 10px;
-}
-
-.form-group label {
-  margin-bottom: 7px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #234;
-}
-
-.input-box,
-.form-control,
-.search-input {
-  padding: 12px 13px;
-  border-radius: 8px;
-  border: 1px solid #cbd5e1;
-  font-size: 16px;
-  background: #fafdff;
-  width: 100%;
-  box-sizing: border-box;
-  transition: border 0.2s;
-  outline: none;
-  margin-bottom: 2px;
-  min-height: 44px;
-}
-
-.input-box:focus,
-.form-control:focus,
-.search-input:focus {
-  border: 1.8px solid #2a7be4;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(74, 139, 245, 0.08);
-}
-
-/* Button styles */
-.button-container {
-  display: flex;
-  gap: 18px;
-  margin-top: 18px;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}
-.button-container button {
-  padding: 14px 28px;
-  border: none;
-  border-radius: 10px;
-  font-size: 17px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.20s;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
-}
-.button-container button:first-child {
-  background: #eee;
-  color: #334;
-}
-.button-container button:last-child {
-  background: linear-gradient(90deg, #2196F3 50%, #5ec0fd 100%);
-  color: #fff;
-}
-.button-container button:last-child:hover {
-  background: #1664b1;
-}
-
-/* Checkbox and Toggle styles */
-.checkbox-row, .checkbox-options {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 10px;
-}
-input[type="checkbox"] {
-  accent-color: #2a7be4;
-}
-
-/* Toggle and Radio buttons */
-.and-or-toggle {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px; 
-  font-size: 15px;
-  font-weight: 600;
-}
-input:not([type="image" i], [type="range" i],  [type="radio" i] [type="search" i]) {
-  padding: 8px 12px;
-  border-radius: 4px;
-  border: none;
-  font-size: 14px;
-  background: #f1f1f1;
-  
-  box-sizing: border-box;
-  transition: border 0.25s, background 0.25s;
-  margin-bottom: 10px;
-  font-size: 15px;
-
-}
-.toggle-buttons label {
-  margin-right: 13px;
-}
-.toggle-buttons input[type="radio"] {
-  margin-right: 6px;
-}
-
+/* Labels and fields */
 .form-title {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 700;
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
+}
+.filter-subgroup1 .select-dropdown{
+  width: 50%;
+}
+.form-group, .select-input, .and-or-toggle {
+height: 58px;
+border-radius: 3px;
 }
 
-/* Small device optimizations */
-@media (max-width: 600px) {
-  .main-content-grid,
-  .filter-form1 {
-    padding: 8px 5px;
-    border-radius: 10px;
-  }
-  .form-title {
-    font-size: 1.3rem;
-    text-align: center;
+.filter-subgroup1 [type="text"], input[type="search"], select{
+  width: 184px;
+height: 58px;
+border-radius: 3px;
+
+}
+/* Modern input and select styles */
+input[type="text"], input[type="email"], input[type="search"], select {
+  
+  padding: 14px 15px;
+  border-radius: 9px;
+  border: 1.2px solid #dde3ea;
+  background: #f7f9fa;
+  font-size: 1.03rem;
+  color: #222;
+  font-weight: 500;
+  transition: border 0.2s, background 0.2s;
+  margin-bottom: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  min-height: 44px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+select:focus {
+  border: 1.7px solid #2196f3;
+  background: #fff;
+}
+label,
+.select-label {
+  font-size: 1rem;
+  color: #333842;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Checkbox logic row (Cap/Tech/Cert/Course CV row) */
+.checkbox-options {
+  display: flex;
+  gap: 16px;
+  margin-top: 11px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+input[type="checkbox"] {
+  accent-color: #2196F3;
+  width: 19px;
+  height: 19px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.checkbox-options label {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #468;
+}
+
+/* AND/OR toggle layout */
+.and-or-toggle {
+  margin: 19px 0 3px 0;
+}
+.toggle-buttons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.toggle-buttons label {
+  font-weight: 700;
+  font-size: 1.04rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.toggle-buttons input[type="radio"] {
+  accent-color: #2196F3;
+  width: 19px;
+  height: 19px;
+  margin-right: 7px;
+}
+
+/* Buttons layout */
+.main-content-grid .button-container {
+  display: flex;
+  gap: 12px;
+  margin-top: auto; /* Push container to bottom */
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  align-items: center;
+  align-content: center;
+}
+
+.main-content-grid .button-container button {
+  padding: 14px 34px;
+  border: none;
+  border-radius: 11px;
+  font-size: 1.11rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(183,202,233,0.07);
+  transition: all 0.18s;
+}
+
+.clear-btn {
+  background: #eef0f3;
+  color: #445;
+}
+.search-btn {
+  background: linear-gradient(90deg, #2196F3 48%, #5ec0fd 100%);
+  color: #fff;
+}
+.search-btn:hover {
+  background: #1766c7;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 700px) {
+  .main-content-grid {
+    padding: 11px 2px;
+    gap: 14px;
   }
   .button-container {
+    flex-direction: column;
     justify-content: center;
+    align-items: stretch;
+    gap: 10px;
   }
-  .button-container button {
-    width: 48%;
-    padding: 12px 0;
-  }
-}
-@media (max-width: 400px) {
   .button-container button {
     width: 100%;
-    padding: 10px 0;
-    font-size: 14px;
+    padding: 11px 0;
+  }
+  .form-title {
+    font-size: 1.2rem;
+    text-align: center;
   }
 }

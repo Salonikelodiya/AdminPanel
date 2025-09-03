@@ -1,10 +1,11 @@
 import SearchIconActive from '../../assets/AllSearchActive.svg';
 import SearchIconDeactive from '../../assets/AllSearchDeactive.svg';
-import ArchiveActive from '../../assets/ArchiveActive.svg';
-import ArchiveDeactive from '../../assets/ArchiveDeActive.svg';
+import ArchiveActive from "../../assets/ArchiveActive.svg"
+import ArchiveDeactive from '../../assets/ArchiveDeactive.svg';
 import AccountActive from '../../assets/AccountDeActive.svg';
 import AccountDeactive from '../../assets/AccountDeActive.svg';
 import ProjectFilterFormContent from './ProjectFilterFormContent';
+import Account from "./Account";
 import Tabs from "../Tabs"
 import AllProjects from "./AllProjects";
  
@@ -34,12 +35,12 @@ const tabs = [
    label: "All projects",
    icon: { active: ArchiveActive, deactive: ArchiveDeactive },
   component: (<AllProjects/>),
+  },
+  {
+    label: "Account",
+    icon: { active: AccountActive , deactive: AccountDeactive },
+    component: <Account/>
   }
-  // {
-  //   label: "All people",
-  //   icon: { active: AccountActive, deactive: AccountDeactive },
-  //   component: <AllPeople />
-  // }
 ];
 return <Tabs tabs={tabs} defaultTab={0} />;
 }

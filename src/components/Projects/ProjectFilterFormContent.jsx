@@ -63,6 +63,7 @@ export default function ProjectFilterFormContent() {
 
   return (
     <div className="filter-form-outer">
+      <h1>Filter</h1>
       <form className="filter-form-grid">
         {/* COLUMN 1 */}
         <div className="form-col">
@@ -88,7 +89,7 @@ export default function ProjectFilterFormContent() {
             name="projectDescription"
             placeholder="Search..."
           />
-        <div className="filter-subgroup">
+        <div className="filter-subgroup2">
           <SelectInput
             label="Practice"
             options={practices}
@@ -157,7 +158,8 @@ export default function ProjectFilterFormContent() {
             onChange={v => setForm(prev => ({ ...prev, status: v }))}
             onClear={handleStatusClear}
           />
-          <div className="filter-subgroup">
+          <div className="filter-subgroup2">
+        
             <DateInput
               label="Start date from"
               value={form.startDateFrom}
@@ -165,6 +167,7 @@ export default function ProjectFilterFormContent() {
               name="startDateFrom"
               placeholder="Select"
               CalendarIcon={() => <img src={calendarSvg} alt="calendar" />}
+            
             />
             <DateInput
               label=""
@@ -174,8 +177,7 @@ export default function ProjectFilterFormContent() {
               placeholder="Select"
               CalendarIcon={() => <img src={calendarSvg} alt="calendar" />}
             />
-          </div>
-          <div className="filter-subgroup">
+          
             <DateInput
               label="Finish date from"
               value={form.finishDateFrom}
@@ -194,9 +196,9 @@ export default function ProjectFilterFormContent() {
             />
           </div>
           <div className="search-mode-row">
-            <div className="form-group" style={{display:"flex" ,justifyContent:"space-between", flexDirection:"row"}}>
-              <label>Search mode</label>
-              <div style={{ display: "flex", gap: "18px", alignItems: "center"  }}>
+            <div className="form-group" style={{display:"flex" ,justifyContent:"space-between", flexDirection:"row", fontSize:500}}>
+              <label style={{fontSize:20}}>Search mode</label>
+              <div style={{ display: "flex", alignItems: "center"  }}>
                 <label>
                   <input
                     type="radio"
@@ -231,7 +233,9 @@ export default function ProjectFilterFormContent() {
             
           </div>
         </div>
+        
       </form>
+     
     </div>
   );
 }

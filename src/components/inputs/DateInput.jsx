@@ -13,13 +13,16 @@ function DateInput({ label, value, onChange, placeholder, name, CalendarIcon }) 
           onChange={onChange}
           name={name}
           placeholder={placeholder}
+          
         />
         {/* CalendarIcon is a React component prop */}
+        <div >
         {CalendarIcon && (
           <span className="calendar-icon">
             <CalendarIcon />
           </span>
         )}
+        </div>
       </div>
     </div>
   );

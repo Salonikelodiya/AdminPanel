@@ -13,7 +13,9 @@ function SelectInput({ label, options, value, onChange, name }) {
           name={name}
         >
           {options.map(opt => (
-            <option key={opt} value={opt}>{opt}</option>
+            <option key={opt.value} value={opt.value}>
+              {opt.label}
+            </option>
           ))}
         </select>
         <span className="select-arrow">&#9660;</span>
