@@ -1,0 +1,112 @@
+/* Sidebar Container */
+.sidebar-parent {
+  width: 256px;
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+  height: 100%; /* Full container height */
+  justify-content: space-between;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 256px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  height: 472px;
+  padding: 20px;
+  box-sizing: border-box;
+   /* Add scrolling if content overflows vertically */
+}
+
+/* Sidebar Items */
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #3b4855;
+  transition: background 0.2s;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%; /* Make full width of sidebar */
+  height: 40px;
+  padding: 0 12px; /* Padding for better click area */
+  box-sizing: border-box;
+}
+
+.sidebar-item:hover {
+  background: #f2f6fc;
+}
+
+.sidebar-item.active {
+  background: #dbedf8;
+  font-weight: bold;
+  color: #127cee;
+  margin-right: 20px;
+}
+
+.sidebar-item.active .sidebar-icon {
+  color: #127cee;
+}
+
+/* Sidebar Footer Info */
+.camico-info {
+  padding: 16px 20px;
+  background: #fff;
+  border-top: 1px solid #ececec;
+  font-size: 14px;
+  color: black;
+  border-radius: 14px;
+  box-shadow: 0 1px 4px rgba(10, 10, 10, 0.05);
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Responsive Adjustments */
+
+/* Medium screens (below 992px) */
+@media (max-width: 992px) {
+  .sidebar {
+    width: 200px;
+    height: auto; /* Let height be auto for flexible content */
+    max-height: 80vh; /* Optional: max height based on viewport */
+  }
+}
+
+/* Small tablets and below (768px and below) */
+@media (max-width: 768px) {
+  /* Hide sidebar initially off-canvas */
+  .sidebar {
+    position: fixed;
+    top: 58px; /* Adjust according to header height */
+    left: 0;
+    width: 220px; /* Slightly narrower for smaller screens */
+    height: calc(100vh - 58px);
+    transform: translateX(-100%);
+    z-index: 1000;
+    overflow-y: auto;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Sidebar open state */
+  .sidebar-open .sidebar {
+    transform: translateX(0);
+  }
+  
+  /* Optional: add overlay darkening effect when sidebar is open */
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .camico-info {
+    display: none; /* Hide footer info on very small screens */
+  }
+  
+  .sidebar {
+    width: 100%; /* Full width for easier access */
+    max-width: 280px; /* Optional max width */
+    height: calc(100vh - 58px);
+  }
+}

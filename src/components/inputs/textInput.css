@@ -1,0 +1,30 @@
+.text-input {
+  width: 384px;
+height: 58px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-label {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.text-field {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 7px;
+  background: #eeeeee;
+  font-size: 1.07rem;
+  color: #222;
+  font-weight: 500;
+  outline: none;
+}
+.text-field::placeholder {
+  color: #bbb;
+  font-size: 1.02rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}

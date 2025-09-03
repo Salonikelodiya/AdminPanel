@@ -1,0 +1,95 @@
+.search-mode-input {
+  width: 384px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-mode-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-mode-label {
+  font-size: 1rem;
+  color: #222;
+  font-weight: 500;
+}
+
+.search-radio-group {
+  display: flex;
+  gap: 16px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  gap: 7px;
+}
+.search-radio {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #bcbcbc;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  outline: none;
+}
+
+.search-radio:checked {
+  border: 2px solid #2992fd;
+  background: #fff;
+}
+
+.search-radio:checked + .custom-radio {
+  box-shadow: 0 0 0 3px #2992fd inset;
+}
+
+.custom-radio {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #bcbcbc;
+  display: inline-block;
+  position: relative;
+  pointer-events: none;
+}
+
+.search-input-row {
+  position: relative;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 34px 10px 14px;
+  border: none;
+  border-radius: 7px;
+  background: #eeeeee;
+  font-size: 1.07rem;
+  color: #222;
+  font-weight: 500;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #bbb;
+  font-size: 1.02rem;
+  font-weight: 400;
+}
+
+.search-dropdown-arrow {
+  position: absolute;
+  right: 13px;
+  color: #2992fd;
+  font-size: 1.18rem;
+  pointer-events: none;
+}

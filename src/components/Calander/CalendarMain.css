@@ -1,0 +1,257 @@
+.calendar-main {
+  width: 1128px;
+height: 836px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #fff;
+  border-radius: 16px;
+  margin: 0 10px;
+  box-shadow: 0 4px 12px #eaeaea2f;
+  padding: 18px 12px;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.calendar-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.calendar-controls {
+  display: flex;
+  gap: 40px;
+  
+  margin-bottom: 36px;
+}
+.calendar-controls-top{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+;
+}
+
+.calendar-branch, .calendar-date {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.calendar-branch select {
+  padding: 0px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  width: 150px;
+  border: 1px solid #dde3eb;
+}
+.calendar-icon{
+  height: 30px;
+  position: relative;
+    
+    
+}
+.calendar-date-controls {
+  display: flex;
+  align-items: center;
+ 
+  gap: 16px;
+}
+.calendar-icon-wrapper{
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  background: #eef2f8;
+  margin-left: 10px;
+}
+
+.calendar-date-controls button {
+  background: #eef2f8;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 1.15rem;
+}
+
+.calendar-controls label {
+  font-size: 0.9rem;
+  color: #717d96;
+  font-weight: 600;
+}
+
+.calendar-icon {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.calendar-summary {
+  display: flex;
+
+  gap: 48px;
+  justify-content: flex-start;
+  padding: 16px 36px 14px 36px;
+  border-radius: 11px;
+  border: 2px solid #dbe6fc;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calendar-summary-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 34px;
+}
+
+.calendar-summary-box:last-child {
+  margin-right: 0;
+}
+
+.calendar-summary-working {
+  font-size: 2.1rem;
+  color: #262b38;
+  font-weight: 600;
+}
+
+.calendar-summary-nonworking {
+  font-size: 2.1rem;
+  color: #de4d51;
+  font-weight: 600;
+}
+
+.calendar-summary-label {
+  font-size: 1rem;
+  color: #767f93;
+  margin-top: 3px;
+}
+
+.calendar-grid {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  display: grid;
+  flex-shrink: 2;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px 7px;
+}
+
+@media (max-width: 900px) {
+  .calendar-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .calendar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.calendar-month {
+  min-width: 140px;
+  padding: 2px 0 10px 0;
+  background: #fff;
+  position: relative;
+display: flex;
+flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(60, 60, 100, 0.05);
+}
+
+.calendar-month-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #262b38;
+  margin-bottom: 14px;
+  padding-left: 6px;
+}
+
+.calendar-table {
+  padding: 6px 6px 6px 6px;
+  min-height: 110px;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  margin-bottom: 5px;
+}
+
+.calendar-weekday {
+  color: #99a1b1;
+  font-size: 0.95em;
+  font-weight: 600;
+  padding-bottom: 2px;
+  text-align: center;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.calendar-day {
+  text-align: center;
+  font-size: 1.02em;
+  color: #262b38;
+  padding: 4px 0;
+  border-radius: 50%;
+  margin: 3px 0;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-sizing: border-box;
+}
+
+.calendar-day.non-working {
+  color: #de4d51;
+}
+
+.calendar-day.selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #347af6;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  margin-left: 60px;
+}
+
+.calendar-month-info {
+display: flex;
+  width: 100%;
+  gap: 18px;
+  padding-left: 4px;
+  margin-top: 5px;
+}
+
+.calendar-month-working {
+  font-size: 0.93em;
+  color: #47536a;
+  background: #e9f4e1;
+  padding: 2px 10px;
+  border-radius: 7px;
+}
+
+.calendar-month-nonworking {
+  font-size: 0.93em;
+  color: #de4d51;
+  background: #fceaea;
+  padding: 2px 10px;
+  border-radius: 7px;
+}

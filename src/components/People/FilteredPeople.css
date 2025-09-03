@@ -1,0 +1,71 @@
+.filtered-people-table-container {
+   width: 862px;
+height: 608px;
+  background:#fff;
+  border-radius: 8px;
+  padding: 28px 16px 18px 18px;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow-y: auto;
+  flex-wrap: wrap;
+
+}
+
+.filtered-people-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.filtered-people-table th,
+.filtered-people-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.filtered-people-table th {
+  background-color: #ededf0;
+  font-weight: 600;
+  color: #393963;
+}
+
+.row-shaded {
+  background-color: #f7f7f9;
+}
+
+.pagination {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1.5px solid #d4d4d8;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #e5e7eb;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.active-page {
+  border-color: #3574F0;
+  background-color: #3574f0;
+  color: white;
+  pointer-events: none;
+}

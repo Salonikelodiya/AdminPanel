@@ -1,0 +1,46 @@
+.filter-grid-form {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #eee;
+  padding: 24px 32px;
+width: 1128px;
+height: 836px;
+}
+.filter-title {
+  margin-bottom: 14px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px 32px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+select{
+  height: 35px;
+}
+.form-radio label,
+.form-checkbox label {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+.filter-apply-btn {
+  margin-top: 18px;
+  padding: 6px 18px;
+  background: #1474fb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1.08rem;
+  cursor: pointer;
+}
+.filter-apply-btn:hover {
+  background: #0e58bb;
+}

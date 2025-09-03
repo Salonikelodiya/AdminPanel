@@ -1,0 +1,243 @@
+.filter-form-outer {
+  gap: 20px;
+  width: 1128px;
+  height: 836px;
+  border-radius: 14px;
+  background: #fff;
+  box-sizing: border-box;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.filter-form-grid{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 450px 450px 228px;
+  background: #fff;
+  padding: 5px 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  /* limit inside form too */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Subgroup grid */
+.filter-subgroup {
+  display: grid;
+  gap: 5px;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  grid-template-columns: repeat(2, 50%);
+}
+
+/* Form Title */
+.form-title {
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+  margin-left: 3px;
+  font-weight: 500;
+}
+
+/* Flex container for rows */
+.form-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  gap: 12px;
+}
+
+/* Flexible column */
+.form-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  gap:20px;
+}
+
+/* Label styling */
+label {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Inputs and selects */
+input[type="text"],
+input[type="search"],
+select {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  font-size: 15px;
+  background: #f1f1f1;
+  width: 100%;
+  box-sizing: border-box;
+  height: 20px;
+  transition: border 0.25s, background 0.25s;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+select:focus {
+  border-color: #a7a7e7;
+  outline: none;
+}
+
+/* Status chips */
+.status-chip-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.status-chip {
+  background: #2574fb;
+  color: #fff;
+  padding: 4px 9px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  font-size: 0.97rem;
+}
+
+.chip-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  margin-left: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Date input group */
+.date-inputs-row {
+  display: flex;
+  gap: 10px;
+}
+
+.date-input {
+  position: relative;
+  display: inline-block;
+  width: 125px;
+}
+
+/* Custom date picker input */
+.custom-date-picker {
+  width: 100%;
+  padding-right: 30px; /* space for icon */
+  box-sizing: border-box;
+}
+
+/* Calendar icon, absolutely positioned */
+.calendar-icon {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  font-size: 1.15em;
+  color: #a0a0a0;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Search mode radios */
+.search-mode {
+  margin-bottom: 7px;
+  display: flex;
+  gap: 13px;
+}
+.search-mode-row{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Buttons container */
+.button-container {
+  display: flex;
+  gap: 12px;
+  margin-top: auto; /* Push container to bottom */
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  align-items: center;
+  align-content: center;
+}
+
+.button-container button {
+  padding: 9px 26px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.button-container button:first-child {
+  background: grey;
+  color: #222;
+}
+
+.button-container button:last-child {
+  background: #007bff;
+  color: #fff;
+}
+
+.button-container button:last-child:hover {
+  background: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .filter-form {
+    padding: 24px 10px;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .form-row {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .form-col {
+    min-width: 0;
+  }
+  .button-container {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .filter-form {
+    padding: 13px 2px;
+  }
+  .form-title {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+  }
+  .button-container button {
+    padding: 8px 6px;
+    font-size: 0.96rem;
+  }
+}
+
+/* Scroll on overflow for very tall mobile screens */
+@media (max-width: 600px) {
+  .filter-form-outer {
+    align-items: stretch;
+  }
+  .filter-form {
+    overflow-y: auto;
+    max-height: 97vh;
+  }
+}

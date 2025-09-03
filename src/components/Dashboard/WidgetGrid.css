@@ -1,0 +1,161 @@
+/* WIDGET CONTAINER */
+.widget-container {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  margin-left: 20px;
+  align-items: flex-start;
+  width: 100%;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  box-sizing: border-box;
+  padding-bottom: 10px; /* Some padding for scroll */
+}
+
+/* WIDGET GRID */
+.widget-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 472px);
+  gap: 25px;
+  overflow-x: auto;
+  justify-content: start;
+  align-items: start;
+  flex: 0 0 auto;
+  padding-bottom: 10px;
+}
+
+/* EACH WIDGET CARD */
+.widget-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 472px;
+  height: 472px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.widget-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Add Widget Container */
+.add-widget-container {
+  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+/* Add Widget Button */
+.add-widget-btn {
+  width: 129px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-widget-btn:hover {
+  background-color: #0056b3;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets (992px and below) */
+@media (max-width: 992px) {
+  .main-parent {
+    padding: 0 12px;
+  }
+
+  /* Use auto-fill with minmax for flexible columns */
+  .widget-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    justify-content: start;
+    gap: 20px;
+  }
+
+  /* Adjust card width */
+  .widget-card {
+    width: 100%; /* Fill grid column */
+    height: auto;
+    aspect-ratio: 1 / 1; /* Keep square shape */
+    max-width: 472px;
+  }
+
+  /* Adjust add widget container */
+  .add-widget-container {
+    flex: 0 0 30%;
+  }
+}
+
+/* Mobile (768px and below) */
+@media (max-width: 768px) {
+  .main-parent {
+    padding: 12px;
+  }
+
+  /* Single column grid */
+  .widget-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Full width cards */
+  .widget-card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .add-widget-container {
+    flex: 0 0 100%;
+    margin-top: 12px;
+    justify-content: center;
+  }
+
+  .add-widget-btn {
+    width: 100%;
+    max-width: 240px;
+  }
+}
+
+/* Small Mobile (480px and below) */
+@media (max-width: 480px) {
+  .widget-container {
+    flex-direction: column;
+    gap: 16px;
+    overflow-x: visible;
+  }
+
+  .widget-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    overflow-x: visible;
+  }
+
+  .widget-card {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .add-widget-container {
+    flex: 0 0 100%;
+    padding: 0;
+  }
+
+  .add-widget-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+export const peopleData = [
+  { id: 1, fullName: "John Doe", region: "UK", branch: "London", division: "Management", userType: "Delivery billable", contractType: "Employee", startDate: "12.01.2013" },
+  { id: 2, fullName: "Jane Smith", region: "US", branch: "New York", division: "Finance", userType: "Non-billable", contractType: "Contractor", startDate: "06.15.2016" },
+  { id: 3, fullName: "Max Mustermann", region: "France", branch: "Paris", division: "Legal", userType: "Delivery billable", contractType: "Employee", startDate: "03.22.2019" },
+  { id: 4, fullName: "Alice Johnson", region: "UK", branch: "Manchester", division: "IT", userType: "Delivery billable", contractType: "Employee", startDate: "11.30.2020" },
+  { id: 5, fullName: "Bob Brown", region: "UK", branch: "Liverpool", division: "Operation", userType: "Non-billable", contractType: "Contractor", startDate: "09.12.2018" },
+  { id: 6, fullName: "Sarah Lee", region: "US", branch: "Chicago", division: "Legal", userType: "Delivery billable", contractType: "Employee", startDate: "04.10.2015" },
+  { id: 7, fullName: "Pierre Dupont", region: "France", branch: "Lyon", division: "Finance", userType: "Non-billable", contractType: "Contractor", startDate: "02.18.2021" },
+  { id: 8, fullName: "Emily Clark", region: "UK", branch: "Leeds", division: "IT", userType: "Delivery billable", contractType: "Employee", startDate: "07.25.2017" },
+  { id: 9, fullName: "David Kim", region: "US", branch: "San Francisco", division: "Management", userType: "Delivery billable", contractType: "Employee", startDate: "09.14.2012" },
+  { id: 10, fullName: "Maria Gonzalez", region: "France", branch: "Marseille", division: "Operation", userType: "Non-billable", contractType: "Contractor", startDate: "05.19.2020" },
+  { id: 11, fullName: "James Miller", region: "UK", branch: "Cardiff", division: "Finance", userType: "Delivery billable", contractType: "Employee", startDate: "03.08.2016" },
+  { id: 12, fullName: "Helena Fischer", region: "France", branch: "Nice", division: "Legal", userType: "Non-billable", contractType: "Contractor", startDate: "08.27.2019" },
+  { id: 13, fullName: "Robert Wilson", region: "US", branch: "Boston", division: "Management", userType: "Delivery billable", contractType: "Employee", startDate: "10.23.2014" },
+  { id: 14, fullName: "Paul Harris", region: "UK", branch: "London", division: "Operation", userType: "Non-billable", contractType: "Contractor", startDate: "09.30.2017" },
+  { id: 15, fullName: "Olivia Martin", region: "France", branch: "Paris", division: "Finance", userType: "Delivery billable", contractType: "Employee", startDate: "06.09.2021" },
+  { id: 16, fullName: "Daniel Evans", region: "US", branch: "New York", division: "IT", userType: "Non-billable", contractType: "Contractor", startDate: "12.22.2022" },
+  { id: 17, fullName: "Thomas Murphy", region: "UK", branch: "Liverpool", division: "Legal", userType: "Delivery billable", contractType: "Employee", startDate: "01.15.2015" },
+  { id: 18, fullName: "Sophia Laurent", region: "France", branch: "Lyon", division: "Management", userType: "Non-billable", contractType: "Contractor", startDate: "06.03.2018" },
+  { id: 19, fullName: "William Turner", region: "US", branch: "Chicago", division: "Operation", userType: "Delivery billable", contractType: "Employee", startDate: "02.12.2013" },
+  { id: 20, fullName: "Ava Cooper", region: "UK", branch: "Manchester", division: "IT", userType: "Non-billable", contractType: "Contractor", startDate: "05.06.2020" }
+];

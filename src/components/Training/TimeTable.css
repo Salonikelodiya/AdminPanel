@@ -1,0 +1,9 @@
+.TimeTable-content{
+   width: 1128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    
+}

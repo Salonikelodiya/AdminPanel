@@ -1,0 +1,150 @@
+.active-people-container {
+    background: #fff;
+  flex-shrink: 1;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 10px 10px 10px 10px;
+font-family: 'Inter', Arial, sans-serif;
+width: 1128px;
+height: 212px;
+  box-sizing: border-box;
+
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.active-people-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #222;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.export-excel-btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background: #fff;
+  color: #3574F0;
+  border: 1.5px solid #3574F0;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.export-excel-btn:hover {
+  background: #f6f9ff;
+}
+
+.excel-icon {
+  margin-right: 7px;
+  font-size: 18px;
+}
+
+/* Make table horizontally scrollable on small screens */
+.people-table {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 18px;
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
+
+/* Table header with background */
+.table-header, .table-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 850px; /* ensures scroll on small devices */
+}
+.table-header{
+    background-color: #ededf0;
+    padding: 2px 2px 2px 2px;
+}
+
+.table-header-cell {
+  
+  color: #393963;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 6px 6px 0 0;
+  text-align: center;
+  flex: 1 1 80px;
+  min-width: 80px;
+  box-sizing: border-box;
+}
+
+.table-row .table-cell {
+  font-size: 17px;
+  color: #222;
+  padding: 8px 10px;
+  text-align: center;
+  flex: 1 1 80px;
+  min-width: 80px;
+  box-sizing: border-box;
+}
+
+/* Summary row style */
+.summary-row {
+  display: flex;
+  gap: 32px;
+  margin-top: 8px;
+  color: #878789;
+  font-size: 16px;
+  flex-wrap: wrap;
+}
+
+.summary-row b {
+  color: #222;
+  font-weight: 600;
+}
+
+/* Responsive font sizes & spacing */
+@media (max-width: 768px) {
+  .active-people-title {
+    font-size: 18px;
+  }
+
+  .export-excel-btn {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .table-header-cell,
+  .table-row .table-cell {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+
+  .summary-row {
+    font-size: 14px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .people-table {
+    min-width: 320px;
+  }
+
+  .table-header, .table-row {
+    min-width: 600px; /* allow scrolling on very small screens */
+  }
+}

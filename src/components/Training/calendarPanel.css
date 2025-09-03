@@ -1,0 +1,78 @@
+.calendar-panel {
+    width: 1128px;
+height: 799.0006103515625px;
+
+  background: #fff;
+  
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #eee;
+
+  margin: auto;
+}
+.calendar-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.weekday-row, .week-row {
+  display: flex;
+  gap: 2px;
+}
+.weekday {
+  flex: 1;
+  text-align: center;
+  color: #888;
+  font-weight: 600;
+  padding: 8px 0;
+}
+.day-cell {
+  flex: 1;
+  min-height: 100px;
+  border: 1px solid #eee;
+  background: #fafafa;
+  position: relative;
+}
+.date {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 8px 0 0 6px;
+}
+.month-label {
+  font-size: 0.9rem;
+  color: #b2b2b2;
+  margin-left: 6px;
+}
+.event {
+  margin: 4px 0 0 6px;
+  font-size: 0.85rem;
+  color: #333;
+}
+.event-time {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+.event-title {
+  font-weight: 600;
+  margin-left: 6px;
+}
+.event-tags {
+  margin-top: 2px;
+  display: flex;
+  gap: 5px;
+}
+.event-tag {
+  border-radius: 8px;
+  padding: 2px 7px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fff;
+}
+.event-tag.paris {
+  background: #43c36f;
+}
+.event-tag.online {
+  background: #448ffd;
+}
+.event-tag.special {
+  background: #e74c3c;
+}

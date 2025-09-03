@@ -1,0 +1,55 @@
+.date-input {
+  width: 184px;
+  display: flex;
+  flex-direction: column;
+}
+
+.date-label {
+  font-size: 1.01rem;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.date-field-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #eeeeee;
+  border-radius: 7px;
+  min-height: 39px;
+}
+
+.date-field {
+  width: 100%;
+  padding: 10px 38px 10px 12px;
+  border: none;
+  border-radius: 7px;
+  background: #eeeeee;
+  font-size: 1.05rem;
+  color: #222;
+  font-weight: 500;
+  outline: none;
+}
+.date-field::placeholder {
+  color: #bbb;
+  font-size: 1.01rem;
+  font-weight: 400;
+}
+
+/* Icon placement */
+.calendar-icon {
+  position: absolute;
+  right: 12px;
+  top: 55%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.calendar-icon svg {
+  width: 22px;
+  height: 22px;
+  color: #2992fd;
+  display: block;
+}

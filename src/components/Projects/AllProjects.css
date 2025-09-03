@@ -1,0 +1,10 @@
+.AllProjects-container{
+    width: 1128px;
+height: 836px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: #f1f1f1;
+
+}

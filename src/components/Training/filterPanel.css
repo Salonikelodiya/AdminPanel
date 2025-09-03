@@ -1,0 +1,35 @@
+.filter-panel {
+  padding: 5px 5px 5px 5px;
+    width: 1128px;
+height: 160px;
+  background: #fff; 
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #e0e0e0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-row {
+    width: 184px;
+height: 58px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+} 
+.filter-row select{
+  height: 40px;
+}
+.apply-button {
+  background: #1e87f0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.apply-button:hover {
+  background: #156fc2;
+}

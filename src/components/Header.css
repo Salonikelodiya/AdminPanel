@@ -1,0 +1,129 @@
+/* Header Bar */
+.headbar {
+  display: flex ;
+  align-items: center ;
+  flex-direction: row;
+ /* Use full container width for responsiveness */
+ width: 1440px; /* Limit width on large screens */
+  position: sticky; /* Stick to top */
+  z-index: 1000 ;
+  height: 64px ;
+  margin: 0 auto; /* Center horizontally */
+  box-sizing: border-box; /* Include padding/borders in width */
+  background: #fff ;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  padding: 0 24px ;
+
+}
+
+/* Profile & Search Section */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Search and notification section */
+.search-notif-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Wrap child elements on smaller screens */
+  gap: 8px;
+}
+
+/* User Info */
+.user-info {
+  width: 134px;
+  height: 26px;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Profile Name */
+.profile-name {
+  font-family: Roboto, sans-serif;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  line-height: 30px !important;
+  letter-spacing: 0.15px !important;
+  vertical-align: middle !important;
+}
+
+/* Search Box */
+.search {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 21px;
+  outline: none;
+  min-width: 100px;
+}
+
+/* Notification Icon */
+.notif {
+  font-size: 22px;
+  color: #3e97ff;
+}
+
+/* Menu Button (burger) - hidden on desktop */
+.menu-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #3b4855;
+}
+
+/* Responsive Adjustments */
+
+/* Medium screens and below */
+@media (max-width: 992px) {
+   
+  .search {
+    width: 180px;
+  }
+}
+
+/* Small tablets and below */
+@media (max-width: 768px) {
+    
+  .search {
+    width: 140px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .headbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    gap: 8px;
+  }
+
+  .search-notif-section {
+    flex-direction: column !important;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .user-info {
+    width: auto; /* Adjust width to content */
+    font-size: 14px;
+  }
+
+  .menu-btn {
+    display: inline-block;
+  }
+
+  /* Make search width 100% on very small screens for full width input */
+  .search {
+    width: 100%;
+    min-width: unset;
+  }
+}

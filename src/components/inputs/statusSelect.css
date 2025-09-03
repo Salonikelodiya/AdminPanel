@@ -1,0 +1,75 @@
+.status-select {
+  width: 384px;
+height: 144px;
+  display: flex;
+  flex-direction: column;
+}
+
+.status-select-label {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.status-select-wrapper {
+  position: relative;
+  background: #eeeeee;
+  border-radius: 12px;
+  height: 144px;
+  padding: 10px 14px 10px 14px;
+  display: flex;
+  
+  gap: 10px;
+}
+
+.status-pill {
+  background: #2992fd;
+  color: #fff;
+  font-weight: 500;
+  height: 30px;
+  font-size: 1.09rem;
+  border-radius: 20px;
+  padding: 4px 16px 4px 16px;
+  margin-right: 6px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.status-clear {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.09rem;
+  cursor: pointer;
+  margin-left: 4px;
+  padding: 0;
+}
+
+.status-dropdown {
+  position: absolute;
+  right: 34px;
+  top: 10px;
+  width: 38px;
+  background: transparent;
+  border: none;
+  color: #222;
+  font-size: 1.09rem;
+  font-weight: 500;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  /* Hide dropdown arrow */
+  z-index: 1;
+  opacity: 0;
+}
+
+.status-arrow {
+  position: absolute;
+  right: 16px;
+  top: 20px;
+  color: #2992fd;
+  font-size: 1.1rem;
+  pointer-events: none;
+}

@@ -1,0 +1,78 @@
+.avail-trainings-table-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #eaecf0;
+  width: 1128px;
+  min-height: 584px;
+  padding: 24px 30px 10px 30px;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.avail-trainings-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.arrow-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1474fb;
+  cursor: pointer;
+  margin: 0 4px;
+}
+.field-select {
+    width: 100px;
+    height: 30px;
+  margin-left: auto;
+  background: #f3f7fa;
+  border: 1px solid #dadada;
+  border-radius: 7px;
+  font-size: 1.09rem;
+  padding: 5px 18px;
+  color: #555;
+}
+.avail-trainings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+.avail-trainings-table th,
+.avail-trainings-table td {
+  padding: 11px 15px;
+  border-bottom: 2px solid #f5f5f9;
+  text-align: left;
+  font-weight: 500;
+}
+.avail-trainings-table th {
+  background: #edecef;
+  color: #555;
+  font-size: 1.09rem;
+}
+.avail-trainings-table td {
+  background: #f7f8fa;
+  vertical-align: middle;
+}
+.avail-trainings-table tr:nth-child(even) td {
+  background: #f0f2f6;
+}
+.avail-trainings-table tr:last-child td {
+  border-bottom: none;
+}
+.plus-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.plus-btn svg {
+  margin: 0 7px 0 0;
+}
