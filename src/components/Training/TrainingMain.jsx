@@ -1,6 +1,6 @@
 
 import FindTraining from"./FindTraining";
-import TimeTableAicon from "../../assets/TimetableActive.svg"
+import TimeTableAicon from "../../assets/TimeTableActive.svg"
 import TimeTableDicon from "../../assets/TimeTableDeactive.svg"
 import FindTrainingAicon from "../../assets/AllSearchActive.svg"
 import FindTrainingDicon from "../../assets/AllSearchDeactive.svg"
