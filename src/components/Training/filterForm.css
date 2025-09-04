@@ -5,6 +5,7 @@
   padding: 24px 32px;
 width: 1128px;
 height: 836px;
+box-sizing: border-box;
 }
 .filter-title {
   margin-bottom: 14px;

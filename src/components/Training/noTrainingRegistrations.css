@@ -1,5 +1,5 @@
 .no-training-container {
-  width: 100%;
+  width:1128px ;
   height: 236px;
   display: flex;
   flex-direction: column;
@@ -7,6 +7,7 @@
   justify-content: center;
   background: #fff;
   border-radius: 12px;
+  box-sizing: border-box;
 }
 .no-training-text {
   color: #575757;

@@ -7,6 +7,7 @@ padding: 10px;
 opacity: 1;
 overflow: scroll;
 box-sizing: border-box;
+ padding: 20px 20px 20px 20px;
 }
 .project-container  select{
     width: 122px;
@@ -109,7 +110,6 @@ opacity: 1;
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-top: 22px;
 }
 
 .footer-btn {

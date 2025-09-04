@@ -4,9 +4,9 @@
   box-shadow: 0 2px 8px #eaecf0;
   width: 1128px;
   height: 384px;
-  padding: 24px 30px 10px 30px;
-  margin: 25px auto;
   overflow-y: auto;
+  box-sizing: border-box;
+  padding: 24px 30px 10px 30px;
   display: flex;
   flex-direction: column;
 }

@@ -5,7 +5,7 @@
   width: 1128px;
   height: 436px;
   padding: 24px 30px 10px 30px;
-  margin: 25px auto;
+  box-sizing: border-box;
   overflow-y: auto;
   display: flex;
   flex-direction: column;

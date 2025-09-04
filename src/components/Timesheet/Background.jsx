@@ -143,7 +143,7 @@ function Background({ projects = [] }) {
           
         </tbody>
       </table>
-      <div style={{display:"flex", flexDirection:"row" , justifyContent:"space-between"}}>
+      <div style={{display:"flex", flexDirection:"row" , justifyContent:"space-between", position:"sticky",zIndex:10}}>
         <div className="project-actions">
         <button className="add-row-btn" onClick={addRow}>+ Add row</button>
         <button className="add-overtime-btn">+ Add overtime</button>
