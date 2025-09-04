@@ -1,4 +1,4 @@
-import "./TimeTable.css";
+import "./timetable.css";
 import FilterPanel from "./FilterPanel"
 import CalendarPanel from "./CalendarPanel";
 import { useState } from "react";
@@ -8,7 +8,7 @@ const allEvents = [
   { id: 2, date: 25, month: 7, year: 2019, time: "10:00", title: "Qualification P.1", tags: ["paris"], branch: "Paris", field: "All", language: "All" },
   // More events here
 ];
-function TimeTable(){
+function Timetable(){
      const [filters, setFilters] = useState({ year: 2019, month: 7, branch: "Paris", field: "All", language: "All" });
 
   const handleFilterChange = (newFilters) => {
@@ -33,4 +33,4 @@ function TimeTable(){
     );
 }
 
-export default TimeTable;
+export default Timetable;
