@@ -1,13 +1,11 @@
 .active-people-container {
     background: #fff;
-  flex-shrink: 1;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  padding: 10px 10px 10px 10px;
+  box-shadow: 0 2px 8px rgba(209, 168, 168, 0.04);
 font-family: 'Inter', Arial, sans-serif;
 width: 1128px;
 height: 212px;
-  box-sizing: border-box;
+box-sizing: border-box;
 
 }
 

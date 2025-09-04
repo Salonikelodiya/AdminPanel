@@ -12,7 +12,7 @@ import QuizzesDicon  from "../../assets/QueryDeactive.svg"
 import RegisterA from  "../../assets/Trai_Regi_Active.svg";
 import  RegisterD from "../../assets/Trai_Regi_Deactive.svg";
 import Registeration from "./Registeration";
-import TimeTable from "./TimeTable";
+import TimeTable from "./Timetable";
 import Tabs from  "../Tabs";
 import Feedback from "./Feedback";
 

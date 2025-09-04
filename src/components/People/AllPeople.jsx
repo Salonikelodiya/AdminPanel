@@ -35,7 +35,7 @@ function AllPeople(){
         <div className="All-people">
          
          <ActivePeopleList/>
-        <div style={{display:"flex", gap:"22px" ,justifyContent:"space-between", height:600,overflowY:"auto", padding:"0 20px", }}>
+        <div className="Filter-people">
         <FilterSidebar filters={filters} setFilters={setFilters} />
         <FilteredPeopleTable people={filteredPeople}/>
 

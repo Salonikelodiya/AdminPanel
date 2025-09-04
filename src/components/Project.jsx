@@ -15,7 +15,7 @@ function Project() {
       <Header toggleSidebar={toggleSidebar} />
       <div className={`dashboard-body ${sidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
         <Sidebar selected={selected} setSelected={setSelected} />
-        <MainContentParent selected={selected} />
+        <MainContentParent  style={{width: 1128,height: 1022,background:"navy"}} selected={selected} />
       </div>
     </div>
   );

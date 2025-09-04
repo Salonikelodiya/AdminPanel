@@ -4,9 +4,10 @@
   display: flex;
   margin-left: 20px;
   flex-direction: column;
-  height: 100%; /* Full container height */
+  height: 100vh; /* full viewport height to stick within */
   justify-content: space-between;
-
+  position: sticky;
+  top: 64px; /* offset by your header height if header is sticky */
 }
 
 /* Sidebar */

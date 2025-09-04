@@ -2,8 +2,9 @@ import React from 'react';
 import Dashboard from './Dashboard/WidgetGrid';
 import People from './People/PeopleMainContent';
  import Projects from "./Projects/ProjectFilterForm";
- import Calender from './Calander/CalendarMain'
- import Training from "./Training/TrainingMain"
+ import Calender from './Calander/CalendarMain';
+ import Training from "./Training/TrainingMain";
+ import Timesheet from "./Timesheet/TimesheetMain";
 // import other components similarly
 
 const MainContentParent = ({ selected }) => {
@@ -19,6 +20,9 @@ const MainContentParent = ({ selected }) => {
       return < Calender/>;
     case 'Training':
       return < Training/>;  
+    case 'Timesheet':
+      return < Timesheet/>;  
+      
     default:
       return (
         <div className="section-placeholder" style={{ padding: '20px'  }}>

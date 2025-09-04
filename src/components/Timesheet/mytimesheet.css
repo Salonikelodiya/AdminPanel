@@ -1,0 +1,32 @@
+.my-time-sheet{
+width: 1128px;
+height: 151px;
+background-color: #fff;
+padding: 10px 0px 10px 10px;
+opacity: 1;
+border-radius: 14px;
+box-sizing: border-box;
+
+}
+.row-conatin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn-container button{
+margin-right: 10px;
+    border: 2px solid blue;
+    background: none;
+    color: blue;
+    width: 179px;
+height: 36px;
+opacity: 1;
+top: 164px;
+left: 1213px;
+border-radius: 30px;
+
+}
+.row-conatin{
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,53 @@
+.comments-table-container {
+  margin: 0 auto;
+  background-color: #ffff;
+ box-sizing: border-box;
+
+}
+
+.table-title {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+.comments-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: inherit;
+  background: #fff;
+  box-shadow: none;
+}
+
+.comments-table th,
+.comments-table td {
+  padding: 12px 10px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.comments-table th {
+  background: #e6e5ea;
+  color: #4f4f4f;
+  font-weight: 600;
+  border-bottom: 2px solid #dedede;
+}
+
+.comments-table tbody tr {
+  background: #fff;
+}
+
+.comments-table tbody tr.alt-row {
+  background: #f8f7fa;
+}
+
+.comments-table td {
+  color: #222;
+  border-bottom: 1px solid #ededed;
+}
+
+.comments-table tbody tr:last-child td {
+  border-bottom: none;
+}

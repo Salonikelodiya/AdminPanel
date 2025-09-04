@@ -9,14 +9,14 @@ background-color: #f1f1f1;
   align-items: center;
   gap:10px
 }
-.filter-people{
-
+.Filter-people{
+  width:1128px;
    display: flex;
-   justify-content: center;
    align-items: center;
     flex-direction: row; 
     flex-shrink: 1;
-    gap: 20px;
+    gap:18px;
+  box-sizing: border-box;
 
 }
 .found-people{

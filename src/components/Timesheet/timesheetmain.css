@@ -1,0 +1,11 @@
+.Time-sheet-main{
+background:#f1f1f1;
+width: 1128px;
+height: 100%;
+gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-items: center;
+    box-sizing: border-box;
+}

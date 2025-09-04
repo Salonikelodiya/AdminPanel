@@ -1,0 +1,73 @@
+.assigned-projects-wrapper {
+ width:900px;
+  background: #ffff;
+  border-radius: 14px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+}
+.assigned-projects-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.assigned-projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.project-pill {
+  padding: 8px 18px;
+  border: 2px solid #2284de;
+  border-radius: 20px;
+  background: #fff;
+  color: #2284de;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.12s;
+  margin-bottom: 8px;
+
+}
+.project-pill.selected {
+  background: #2284de;
+  color: #fff;
+}
+.legend-box {
+  width:228px;
+  border-radius: 14px;
+  background: #fff;
+    padding: 10px 10px 10px 10px;
+}
+.legend-label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+  gap: 10px;
+  font-size: 14px;
+}
+.legend-color-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  min-height: 23px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 6px;
+  box-shadow: 0 1px 3px #e3e3e3;
+}
+.legend-blue { background: #2284de; }
+.legend-red { background: #d43b35; }
+.legend-today { background: #fff; border: 1px solid #bbb; color: #121212; }
+.legend-green { background: #1ea869; }
+.legend-orange { background: #e6841f; }
+.legend-value { padding: 0 5px; }
+.legend-name { color: #222; }

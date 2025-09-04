@@ -9,6 +9,7 @@ height: 160px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 .filter-row {
     width: 184px;

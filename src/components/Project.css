@@ -12,9 +12,13 @@
  width: 1440px;
  height: 1022px;
 display: flex;
-justify-content: center;
 align-content: center;
 flex-direction: row;
 
+}
+.Main-component{
+  width: 1128px;
+height: 1022px;
+background: navy;
 }
 
